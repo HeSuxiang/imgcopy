@@ -1,0 +1,7 @@
+d:\用户目录\我的文档\visual studio 2010\Projects\imgcopy\imgcopy\bin\Release\imgcopy.exe
+d:\用户目录\我的文档\visual studio 2010\Projects\imgcopy\imgcopy\bin\Release\imgcopy.pdb
+d:\用户目录\我的文档\visual studio 2010\Projects\imgcopy\imgcopy\obj\x86\Release\imgcopy.Form1.resources
+d:\用户目录\我的文档\visual studio 2010\Projects\imgcopy\imgcopy\obj\x86\Release\imgcopy.Properties.Resources.resources
+d:\用户目录\我的文档\visual studio 2010\Projects\imgcopy\imgcopy\obj\x86\Release\imgcopy.csproj.GenerateResource.Cache
+d:\用户目录\我的文档\visual studio 2010\Projects\imgcopy\imgcopy\obj\x86\Release\imgcopy.exe
+d:\用户目录\我的文档\visual studio 2010\Projects\imgcopy\imgcopy\obj\x86\Release\imgcopy.pdb
