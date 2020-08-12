@@ -95,11 +95,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(218, 129);
+            this.label4.Location = new System.Drawing.Point(194, 129);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(185, 12);
+            this.label4.Size = new System.Drawing.Size(245, 12);
             this.label4.TabIndex = 7;
-            this.label4.Text = "复制工号对应的图片到保存文件夹";
+            this.label4.Text = "复制工号对应的图片到保存文件夹(强制覆盖)";
             // 
             // button2
             // 
@@ -178,7 +178,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "提取工号图片 v1.0";
+            this.Text = "提取工号图片 v1.1";
             this.ResumeLayout(false);
             this.PerformLayout();
 

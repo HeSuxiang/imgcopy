@@ -82,12 +82,24 @@ namespace imgcopy
 
             }
 
+            try
+            {
+                int count = ReadTxtFile(textBox1.Text);
+                //foreach (string s in txtString)
+                //{
+                //    ShowInfo(s);
+                //}
+                ShowInfo("从txt共读取数据" + count + "条");
+                addFileExtension();
 
-            ReadTxtFile(textBox1.Text);
+                CopyFile();
+            }
+            catch (Exception exception)
+            {
+                ShowInfo("遇到错误!请检查输入！！！");
+            }
 
-            addFileExtension();
-
-            CopyFile();
+            
 
 
 
@@ -165,15 +177,17 @@ namespace imgcopy
         }
 
         //读取工号txt文件到数组中，每行一个工号
-        private void ReadTxtFile(string fileName)
+        private int ReadTxtFile(string fileName)
         {
+            int count = 0;
+
+
             txtString = File.ReadAllLines(fileName, Encoding.ASCII);
-            //foreach (string s in txtString)
-            //{
-            //    ShowInfo(s);
-            //}
-            ShowInfo("从txt共读取数据" + txtString.Length + "条");
+            count = txtString.Length;
+            return count;
         }
+
+
 
         //显示消息
         private void ShowInfo(string msg)
@@ -185,6 +199,7 @@ namespace imgcopy
         //检查所有输入
         private Boolean checkAllInput()
         {
+
             if (textBox1.Text.Equals(""))
             {
                 ShowInfo("先选择工号文本文件");
@@ -196,6 +211,8 @@ namespace imgcopy
                 ShowInfo("先选择原始照片路径");
                 return false;
             }
+            sourceDirectory = textBox2.Text;
+
 
             if (textBox3.Text.Equals(textBox2.Text))
             {
@@ -203,14 +220,18 @@ namespace imgcopy
                 return false;
             }
 
+
             if (textBox3.Text.Equals(""))
             {
                 ShowInfo("再选择照片保存路径");
                 return false;
             }
-
+            destinationDirectory = textBox3.Text;
             return true;
         }
+
+
+
 
 
     }
